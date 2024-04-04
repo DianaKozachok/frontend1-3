@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mazda 3</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif; 
+            margin: 0; 
+            padding: 0; 
+            background-color: #ffffff; 
+        }
+    </style>
+</head>
+<body>
+    <nav class="navigation" aria-label="Main Navigation">
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><button id="registration-btn" onclick="redirectToPage('game.html')">Game</button></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>Mazda 3</h1>
+    </header>
+    <aside class="sidebar">
+        <div class="sidebar-image">
+            <img src="images/mazda_3__539007635f (1).webp" alt="My photo" width="370px" class="my-photo" />
+        </div>
+        <div class="car-info">
+            <div class="read-link">
+                <h2>Перейти тут</h2>
+                <a href="https://auto.ria.com/uk/auto_mazda_3_36129046.html">Дивитися тут</a>
+            </div>
+            <div class="container">
+                <div>
+                    <h2 class="year">Рік випуску</h2>
+                    <p>2016</p>
+                </div>
+                <div>
+                    <h2 class="price">Ціна</h2>
+                    <p>11 500$</p>
+                </div>
+                <div>
+                    <h2>Двигун</h2>
+                    <p>2л, Бензин</p>
+                </div>
+                <div>
+                    <h2>Колір</h2>
+                    <p>Чорний</p>
+                </div>
+                <div>
+                    <h2>Кількість власників</h2>
+                    <p>4</p>
+                </div>
+                <div>
+                    <h2>Пробіг</h2>
+                    <ol class="project-list">
+                        <li class="project-item">
+                            82 тис.км 
+                            </span>
+                        </li>
+                        <li class="project-item">
+                            52 тис.км 
+                        </span>
+                        </li>
+                    </ol>
+                </div>
+                <div>
+                    <h2>Коробка передач</h2>
+                    <ol class="project-list">
+                        <li class="project-item">
+                            Автомат
+                            </span>
+                        </li>
+                        <li class="project-item">
+                            Механіка
+                        </span>
+                        </li>
+                    </ol>
+                </div>
+                <div>
+                    <h2>Опис</h2>
+                    <p class="my-descr">Автомобіль в ідеальному стані. Підходить, як для чоловіків, так і для жінок. Дуже комфортно на ньому їздити. Фотографії в салоні та з машиною виходять дуже класні. Машина на зимовій гумі, є також літня гума. ТО проходили вчасно, на розхідниках та запчастинах не було єкономії. Заміна олії кожні 7000 тисяч кілометрів. Двигун, коробка та ходова в повному порядку.</p>
+                </div>
+        
+                <div class="contacts-containner">
+                    <h2 class="sidebar-tittle">Діана</h2>
+                </div>
+                <div class="contacts-containner">
+                    <h3 class="sidebar-tittle">Контакти:</h3>
+                    <p class="contacts-item">
+                        <span class="contacts-type">C: </span>
+                        <a href="tel:+380930212922" class="contacts-number">+380 930 212 922</a>
+                    </p>
+                    <p class="contacts-item">
+                        <span class="contacts-type">Пошта: </span>
+                        <a href="mailto:dianakozachok35@gmail.com" class="contacts-email">dianakozachok35@gmail.com</a>
+                    </p>
+                    <p class="contacts-item">
+                        <span class="contacts-type">Пошта корпоративна: </span>
+                        <a href="mailto:diana.kozachok@lnu.edu.ua" class="contacts-email">diana.kozachok@lnu.edu.ua</a>
+                    </p>
+                </div>
+
+                <div class="chapter-table">
+                    <h2>Порівняння</h2>
+                    <table>
+                        <tr>
+                            <th>Mazda 3</th>
+                            <th>Ford Fiesta</th>
+                        </tr>
+                        <tr>
+                            <td>104 к.с</td>
+                            <td>120 к.с</td>
+                        </tr>
+                        <tr>
+                            <td>51</td>
+                            <td>47</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>5</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="frame">
+                    <iframe width="700" height="500" src="https://www.google.com/maps/place/228/@49.8272418,23.9457373,17z/data=!3m1!4b1!4m6!3m5!1s0x473ae745bd16e38f:0xaa52a50b6ccc1705!8m2!3d49.8272418!4d23.9483122!16s%2Fg%2F1hd_f8vc4?entry=ttu" title="Google Maps " allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+        <footer class="signup">
+            <button onclick="window.location.href='signup.html'">Реєстрація</button>
+        </footer>
+    </aside>
+
+    <h2>Форма опитування про машини</h2>
+    <form id="surveyForm" action="/submit_survey" method="post">
+        <div>
+            <label for="car_brand">Виберіть марку автомобіля:</label>
+            <select id="car_brand" name="car_brand">
+                <option value="Toyota">Toyota</option>
+                <option value="Mazda">Mazda</option>
+                <option value="Ford">Ford</option>
+                <option value="BMW">BMW</option>
+                <option value="Mercedes">Mercedes</option>
+            </select>
+        </div>
+        <div>
+            <p>Виберіть тип палива:</p>
+            <input type="radio" id="fuel_petrol" name="fuel_type" value="petrol">
+            <label for="fuel_petrol">Бензин</label><br>
+            <input type="radio" id="fuel_diesel" name="fuel_type" value="diesel">
+            <label for="fuel_diesel">Дизель</label><br>
+            <input type="radio" id="fuel_hybrid" name="fuel_type" value="hybrid">
+            <label for="fuel_hybrid">Гібрид</label><br>
+            <input type="radio" id="fuel_electric" name="fuel_type" value="electric">
+            <label for="fuel_electric">Електро</label><br>
+        </div>
+        <div>
+            <p>Оберіть технічний стан:</p>
+            <input type="checkbox" id="tech_good" name="tech_condition" value="good">
+            <label for="tech_good">Хороший</label><br>
+            <input type="checkbox" id="tech_average" name="tech_condition" value="average">
+            <label for="tech_average">Середній</label><br>
+            <input type="checkbox" id="tech_poor" name="tech_condition" value="poor">
+            <label for="tech_poor">Поганий</label><br>
+        </div>
+        <div>
+            <label for="meeting_time">Виберіть зручний час для зустрічі:</label><br>
+            <input type="date" id="meeting_date" name="meeting_date">
+            <input type="time" id="meeting_time" name="meeting_time">
+            <input type="week" id="meeting_week" name="meeting_week">
+        </div>
+        <div>
+            <label for="car_rating">Оцініть автомобіль від 0 до 10:</label>
+            <input type="number" id="car_rating" name="car_rating" min="0" max="10" step="1">
+        </div>
+        <div>
+            <button type="button" onclick="saveSurveyResults()">Відправити</button>
+        </div>
+    </form>
+
+    <script>
+        function saveSurveyResults() {
+            const form = document.getElementById('surveyForm');
+            const formData = new FormData(form);
+            const surveyResults = {};
+            for (const [key, value] of formData.entries()) {
+                surveyResults[key] = value;
+            }
+            const surveys = JSON.parse(localStorage.getItem('surveys')) || [];
+            surveys.push(surveyResults);
+            localStorage.setItem('surveys', JSON.stringify(surveys));
+            alert('Результати опитування збережено в LocalStorage.');
+            form.reset();
+        }
+    </script>
+
+<a href="test.html"><button>Пройти опитування</button></a>
+
+<script>
+    function redirectToPage(page) {
+        window.location.href = page;
+    }
+</script>
+
+</body>
+</html>

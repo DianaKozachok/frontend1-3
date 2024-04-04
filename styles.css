@@ -1,0 +1,128 @@
+/* Обнулення стилів */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Загальні стилі */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  color: #333333;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Заголовок */
+header {
+  background-color: #213733;
+  color: white;
+  padding: 25px;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+/* Навігаційне меню */
+.menu {
+  list-style-type: none;
+  background-color: #1d1d1d;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.menu li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.menu li:last-child {
+  margin-right: 0;
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 20px;
+}
+
+.menu a:hover {
+  background-color: #333333;
+}
+
+/* Сайдбар */
+.sidebar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.sidebar .sidebar-image img {
+  width: 100%;
+  height: auto;
+}
+
+.sidebar .car-info {
+  flex-basis: calc(50% - 20px);
+  margin-top: 20px;
+}
+
+.sidebar .contacts-container {
+  margin-top: 20px;
+}
+
+.sidebar h2 {
+  font-size: 22px;
+  margin-bottom: 8px;
+}
+
+.sidebar p {
+  margin-bottom: 10px;
+}
+
+/* Форма опитування */
+#surveyForm {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 50px;
+}
+
+#surveyForm label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+#surveyForm select,
+#surveyForm input[type="date"],
+#surveyForm input[type="time"],
+#surveyForm input[type="week"],
+#surveyForm input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+#surveyForm button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#surveyForm button:hover {
+  background-color: #0056b3;
+}
